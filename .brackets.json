@@ -1,0 +1,12 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/threex.videotexture-master/threex.webcamtexture.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/bower_components/threex.videotexture/examples/vendor/three.js/examples/js/libs/stats.min.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/threex.videotexture-master/examples/vendor/three.js/examples/js/libs/stats.min.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/threex.videotexture-master/examples/vendor/three.js/build/three.min.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/threex.videotexture-master/examples/threex.videotexture.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/sketch.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/bower_components/threex.videotexture/examples/vendor/three.js/build/three.min.js",
+        "/Users/newuser/Documents/Karo/Projects/VisualExploration/SoundVisualization/tundra/ks/GradientMaterialShader.js"
+    ]
+}
