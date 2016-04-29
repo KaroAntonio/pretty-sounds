@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Kaleidoscope and RGBShift Shaders for Three.js</title>
+		<title>Dreamscope</title>
 		<meta charset="utf-8">
 		<style>
 			body {
@@ -302,13 +302,13 @@
                 requestAnimationFrame( animate );
                 
                 //Circle Gradient
-                if (nowMsec/1000 < 28) { //28
+                if (nowMsec/1000 < 0) { //28
                     gradientParams = {
                         mxy: new THREE.Vector2 (mouseX/window.innerWidth, 1-mouseY/window.innerHeight),
                         size: nowMsec/40000.0,
                         mode: 2,
                     }
-                } else if (nowMsec/1000 > 28 && nowMsec/1000 < 48) {
+                } else if (nowMsec/1000 > 0 && nowMsec/1000 < 48) { // >28
                     gradientParams = {
                         mxy: new THREE.Vector2 (mouseX/window.innerWidth, 1-mouseY/window.innerHeight),
                         size: (nowMsec/1000.0 - 28) / 200,
@@ -323,7 +323,7 @@
                 }
                 
                 //Kscope
-                if (nowMsec/1000 > 28 && nowMsec/1000 < 48) { 
+                if (nowMsec/1000 > 0 && nowMsec/1000 < 10000) {  // 28 - > 48
                     kaleidoParams = {
 					sides: 10 - clicks,
 					//angle: nowMsec/-9000,
@@ -337,7 +337,7 @@
                 }
                 
                 //RGB
-                if (nowMsec/1000 > 52 && nowMsec/1000 < 60) { //28
+                if (nowMsec/1000 > 0 && nowMsec/1000 < 0) { //28
                     rgbParams = {
                         amount: 0.01,
                         angle: nowMsec/-3000,
@@ -350,13 +350,13 @@
                 }
                 
                 //Re-Compose
-                if (nowMsec/1000 > 28 && nowMsec/1000 < 48) { //28
+                if (nowMsec/1000 > 0 && nowMsec/1000 < 48) { //28
                     if (check[0] == false) {
                         check[0] = true;
                         composeGeometry(cubeHolder, vmaterial, 20, {nested : false, dims : [1000,1000,1000], randRot : true});
                     }
                     
-                } else if (nowMsec/1000 > 48 && nowMsec/1000 < 60) {
+                } else if (nowMsec/1000 > 0 && nowMsec/1000 < 60) {
                    if (check[1] == false) {
                         check[1] = true;
                         composeGeometry(cubeHolder, vmaterial, 10, {nested : true, dims : [700,700,700], randRot : false});
